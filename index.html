@@ -1,0 +1,433 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Xin Huang 黄鑫</title>
+  <link href="./css/style.css" rel="stylesheet" media="all" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/bd3becbd8d.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    window.onload = choosePic;
+    var myPix = new Array("./images/xinhuang.jpg");
+    function choosePic() {
+      var randomNum = Math.floor(Math.random() * myPix.length);
+      document.getElementById("myPicture").src = myPix[randomNum];
+    }
+    function lastUpdate() {
+      var x = document.lastModified.substr(0, 10);
+      document.getElementById("demo").innerHTML = x;
+    }
+  </script>
+
+  <script type="text/javascript" src="./js/hidebib.js"></script>
+  <script type="text/javascript" src="./js/loadtxt.js"></script>
+</head>
+
+<body onload="lastUpdate()">
+  <div class="content">
+    <div id="container">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <img id="myPicture" src="./images/xinhuang.jpg" style="float: center; border-radius: 30%" width="150px" />
+            </td>
+            <td>
+              <div id="DocInfo">
+                <div id="intro">
+                  <h1>Xin Huang 黄鑫</h1>
+
+                  <a style="color: black" href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University</a><br />
+                  <br />
+                  <a href="mailto: xihuang@mail.nwpu.edu.cn">
+                    <span class="fa fa-envelope" style="color: rgb(59, 59, 63); font-size: 20px">
+                      <span style="font-family: Optima Bold">xinhuang</span>
+                      <span class="fa fa-at" style="color: rgb(59, 59, 63); font-size: 20px"><span
+                          style="font-family: Optima Bold">
+                          mail.nwpu.edu.cn</span></span></span></a>
+                  <br />
+                </div>
+                <br />
+                <ul class="icon-list">
+                  <a style="color: black" href="./about/xinhuangCV.pdf">
+                    <span class="ai ai-cv fa-xl"></span>
+                  </a>
+
+                  <a style="color: black" href="https://github.com/shsf0817">
+                    <span class="fa fa-github fa-xl"></span>
+                  </a>
+
+                  <a style="color: black" href="">
+                    <span class="ai ai-google-scholar fa-xl"></span>
+                  </a>
+
+                  <!-- <a style="color: black" href="">
+                    <span class="ai ai-researchgate fa-xl"></span>
+                  </a>
+                  <span style="color: gray; font-weight: normal">|</span> -->
+                  
+                  <!-- <a style="color: black" href="">
+                    <span class="fa fa-linkedin fa-xl"></span>
+                  </a> -->
+
+                  <a style="color: black" href="https://twitter.com/xinhuang_">
+                    <span class="fa fa-twitter fa-xl"></span>
+                  </a>
+
+                  <!-- <a style="color: black" href="">
+                    <span class="fa fa-facebook fa-xl"></span>
+                  </a> -->
+
+                  <a style="color: black" href="https://www.zhihu.com/people/huang-xin-13-42">
+                    <span class="fa-brands fa-zhihu fa-xl"></span>
+                  </a>
+
+                  <a style="color: black" href="https://www.youtube.com/channel/UCWlOeYp0f24ow7skLIpS__A">
+                    <span class="fa fa-youtube fa-xl"></span>
+                  </a>
+
+                  <!-- <a style="color: black" href="https://space.bilibili.com/86857008">
+                    <span class="fa-brands fa-bilibili fa-xl"></span>
+                  </a> -->
+                </ul>
+
+                <br />
+              </div>
+              <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <br />
+            <h1>Biography</h1>
+
+            I am currently a 3rd-Year Ph.D. student in the School of Computer Science of 
+            <a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University (NPU)</a>,
+            supervised by <a href="https://teacher.nwpu.edu.cn/qwang.html">Prof. Qing Wang</a>.
+            My research interests are in computer vision and computational photography, in particular in <u>Neural
+              Radiance Fields (NeRF)</u>, <u>Novel View Synthesis</u>,
+            <u>Neural Camera Model</u> . Currently, I'm a research intern in the Visual Computing Center@<a
+              href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a>
+            to work with <a href="https://qzhang-cv.github.io/">Qi Zhang</a>. I received my M.Sc. degree from the School
+            of Computer Science of NPU in 2020.
+            <br /><br />
+
+          </td>
+        </tr>
+      </table>
+
+      <div class="logo">
+        <a href="https://en.nwpu.edu.cn/"><img src="./images/npu.png" /></a>
+        <a href="https://ai.tencent.com/ailab/en/index"><img src="./images/ailab.png" /></a>
+      </div>
+
+
+      <h1>News</h1>
+      [2023/02/28] Two first-author papers LIRF and NeuCam got accepted by <strong style="color: brown">CVPR
+        2023</strong>!<br>
+      [2022/03/03] One first-author papers HDR-NeRF got accepted by <strong style="color: brown">CVPR 2022</strong>!<br>
+      [2021/08/14] I started an internship at Tencent AI Lab.
+      <br /><br />
+
+      <h1 id="citation">Publications</h1>
+      <!-- Favorite papers are <span style="background-color: lightgoldenrodyellow;">highlighted</span>. <br /> -->
+      <table class="pub_table">
+
+        <!-- Neural Camera -->
+        <tr id="huang2023neucam">
+          <td class="pub_td1">
+            <img src="./about/neucam.gif" />
+          </td>
+          <td class="pub_td2">
+            <b>Inverting the Imaging Process by Learning an Implicit Camera Model&nbsp;</b><iframe
+              src="https://ghbtns.com/github-btn.html?user=shsf0817&repo=hdr-nerf&type=star&count=true&v=2&size=small"
+              frameborder="0" scrolling="0" width="100" height="20"></iframe>
+
+            <br /><br />
+            <strong>Xin Huang</strong>,
+            <a href="https://qzhang-cv.github.io/">Qi Zhang</a>,
+            Ying Feng,
+            <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+            <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+            <br />
+            <i>Computer Vision and Pattern Recognition 2023 (<strong style="color: brown">CVPR 2023</strong>)</i>
+            <br /><br />
+
+            <a href="">
+              <i class="fas fa-home" aria-hidden="true">&nbsp;</i>
+              Home&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>
+              arXiv&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-video" aria-hidden="true">&nbsp;</i>
+              Video&nbsp;
+            </a>
+
+          </td>
+        </tr>
+
+        <!-- LIRF -->
+        <tr id="huang2023lirf">
+          <td class="pub_td1">
+            <img src="./about/lirf.gif" />
+          </td>
+          <td class="pub_td2">
+            <b>Local Implicit Ray Function for Generalizable Radiance Field Representation&nbsp;</b><iframe
+              src="https://ghbtns.com/github-btn.html?user=shsf0817&repo=hdr-nerf&type=star&count=true&v=2&size=small"
+              frameborder="0" scrolling="0" width="100" height="20"></iframe>
+
+            <br /><br />
+            <strong>Xin Huang</strong>,
+            <a href="https://qzhang-cv.github.io/">Qi Zhang</a>,
+            Ying Feng,
+            <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
+            <a href="https://xuanwangvc.github.io/">Xuan Wang</a>,
+            <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+            <br />
+            <i>Computer Vision and Pattern Recognition 2023 (<strong style="color: brown">CVPR 2023</strong>)</i>
+            <br /><br />
+
+            <a href="">
+              <i class="fas fa-home" aria-hidden="true">&nbsp;</i>
+              Home&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>
+              arXiv&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-video" aria-hidden="true">&nbsp;</i>
+              Video&nbsp;
+            </a>
+          </td>
+        </tr>
+
+        <!-- HDR-NeRF -->
+        <tr id="huang2022hdrnerf">
+          <td class="pub_td1">
+            <img src="./about/hdrnerf.gif" />
+          </td>
+          <td class="pub_td2">
+            <b>HDR-NeRF: High Dynamic Range Neural Radiance Fields&nbsp;</b>
+            <iframe
+              src="https://ghbtns.com/github-btn.html?user=shsf0817&repo=hdr-nerf&type=star&count=true&v=2&size=small"
+              frameborder="0" scrolling="0" width="100" height="20"></iframe>
+
+            <br /><br />
+            <strong>Xin Huang</strong>,
+            <a href="https://qzhang-cv.github.io/">Qi Zhang</a>,
+            Ying Feng,
+            <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+            <a href="https://xuanwangvc.github.io/">Xuan Wang</a>,
+            <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+            <br />
+            <i>Computer Vision and Pattern Recognition 2022 (<strong style="color: brown">CVPR 2022</strong>)</i>
+            <br /><br />
+
+            <a href="">
+              <i class="fas fa-home" aria-hidden="true">&nbsp;</i>
+              Home&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>
+              arXiv&nbsp;
+            </a>
+
+            <a href="">
+              <i class="fa fa-video" aria-hidden="true">&nbsp;</i>
+              Video&nbsp;
+            </a>
+          </td>
+        </tr>
+
+        <!-- MHI -->
+        <tr id="zhang2022mhi">
+          <td class="pub_td1">
+            <img src="./about/mhi.gif" />
+          </td>
+          <td class="pub_td2">
+            <b>Stereo Unstructured Magnification: Multiple Homography Image for View Synthesis&nbsp;</b>
+
+            <br /><br />
+            <a href="https://qzhang-cv.github.io/">Qi Zhang</a>,
+            <strong>Xin Huang</strong>,
+            Ying Feng,
+            Xue Wang,
+            <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+            <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+            <br />
+            <i>arXiv 2022</i>
+            <br /><br />
+
+            <a href="https://arxiv.org/abs/2204.00156">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>
+              arXiv&nbsp;
+            </a>
+
+          </td>
+        </tr>
+
+        <!-- Relighting -->
+        <tr id="hu2021any">
+          <td class="pub_td1">
+            <img src="./about/relighting.png" />
+          </td>
+          <td class="pub_td2">
+            <b>SA-AE for Any-to-Any Relighting&nbsp;</b>
+
+            <br /><br />
+            Zhongyun Hu,
+            <strong>Xin Huang</strong>,
+            Yaning Li,
+            <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+            <br />
+            <i>European Conference on Computer Vision Workshops: (<strong style="color: brown">ECCV 2020
+                Woorkshops</strong>)</i>
+            <br /><br />
+
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_32">
+              <i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>
+              Paper&nbsp;
+            </a>
+
+          </td>
+        </tr>
+
+        <!-- <tr id="xiu2021icon" class="focus">
+              <td class="pub_td1">
+                <img src="./about/icon.jpeg" />
+              </td>
+              <td class="pub_td2">
+                <b>ICON: Implicit Clothed humans Obtained from Normals&nbsp;</b>
+                <iframe
+                  src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=ICON&type=star&count=true&v=2&size=small"
+                  frameborder="0"
+                  scrolling="0"
+                  width="100"
+                  height="20"
+                ></iframe
+                ><a
+                  href="https://colab.research.google.com/drive/1-AWeWhPvCTBX0KfMtgtMk10uPU05ihoA?usp=sharing"
+                >
+                  <img
+                    style="
+                      height: 20px;
+                      outline: 1px solid grey;
+                      border-radius: 5pt;
+                    "
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/256px-Google_Colaboratory_SVG_Logo.svg.png"
+                  /> </a
+                >&nbsp;<a href="https://huggingface.co/spaces/Yuliang/ICON">
+                  <img
+                    style="
+                      height: 20px;
+                      outline: 1px solid grey;
+                      border-radius: 5pt;
+                    "
+                    src="https://avatars.githubusercontent.com/u/25720743?s=200&v=4"
+                  /> </a
+                ><br /><br />
+                <strong>Yuliang Xiu</strong>,
+                <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
+                <a href="https://ps.is.mpg.de/~dtzionas">Dimitrios Tzionas</a>,
+                <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+                <br />
+                <i
+                  >Computer Vision and Pattern Recognition 2022 (<strong
+                    style="color: brown"
+                    >CVPR 2022</strong
+                  >)</i
+                ><br /><br />
+  
+                <a
+                  shape="rect"
+                  href="javascript:toggleabs(&#39;xiu2021icon&#39;)"
+                  class="toggleabs"
+                  ><i class="fas fa-angle-double-down" aria-hidden="true"
+                    >&nbsp;</i
+                  >Intro&nbsp;</a
+                >
+                <a href="https://icon.is.tue.mpg.de"
+                  ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                  >Home&nbsp;</a
+                >
+                <a href=""
+                  ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i></a
+                >[<a href="https://arxiv.org/abs/2112.09127">arXiv</a>,
+                <a href="https://readpaper.com/paper/4569785684533977089"
+                  >Reader</a
+                >]
+                <a
+                  href="https://www.icloud.com.cn/keynote/01dxNGQJ8mBIIUG6i8O61_UCA#ICON-CVPR2022"
+                  ><i class="fas fa-chalkboard-user" aria-hidden="true">&nbsp;</i
+                  >Slides&nbsp;</a
+                >
+                <a href=""
+                  ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                  >Video&nbsp;</a
+                >[<a href="https://youtu.be/hZd6AYin2DE">En</a>,
+                <a href="https://jmq.xet.tech/s/4qkfFu">中</a>]
+                <a href="https://zhuanlan.zhihu.com/p/477379718"
+                  ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+                >
+                <a
+                  shape="rect"
+                  href="javascript:togglebib(&#39;xiu2021icon&#39;)"
+                  class="togglebib"
+                  ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                  >Bibtex&nbsp;</a
+                >
+                <pre
+                  id="iconbib"
+                  xml:space="preserve"
+                  style="display: none"
+                ></pre>
+                <span id="iconabs" style="display: none"></span>
+              </td>
+            </tr> -->
+      </table>
+
+      <h2>Talks</h2>
+      <li>高动态范围神经辐射场—HDR-NeRF (<a href="https://www.shenlanxueyuan.com/open/course/158">深蓝学院</a>)</li>
+
+      <h2>Honors and Awards</h2>
+      <li> <b>Outstanding Graduate Students (Top 6%)</b> in Northwestern Polytechnical University, 2020.</li>
+      <li> <b>Champion</b> in China Robot Competition - Dancing Robots Project, 08/2019.</li>
+      <li> <b>Champion</b> in China Robot Competition - Dancing Robots Project, 08/2018.</li>
+      <li> <b>Meritorious Winner (Top 7.2\%)</b> in International Mathematical Contest in Modeling (MCM), 02/2018.</li>
+      <li> <b>Outstanding Students</b> in Northwestern Polytechnical University, 2017 and 2019.</li>
+      <li> <b>First Prize ($7,200)</b> in Face Recognition Hackathon, Shaanxi, China, 11/2017.</li>
+
+
+      <div align="center">
+        <div style="width: 200px; height: 300px">
+          <!-- <script type="text/javascript" id="clstr_globe"
+            src="//clustrmaps.com/globe.js?d=rW3OE8b2mKOjjq_alCSlCohNv0gBVFF6R0Pj4W60HmY"></script> -->
+          <script type="text/javascript"
+            src="//rf.revolvermaps.com/0/0/6.js?i=5losxwdr0af&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80"
+            async="async">
+            </script>
+        </div>
+        <br />
+        <strong>
+          This page is last updated at <span style="color: rgb(53, 182, 171)" id="demo"></span>
+        </strong>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
